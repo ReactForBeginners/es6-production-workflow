@@ -18,3 +18,9 @@ Contains examples of:
    + Fat arrow function
    + Spread operator ...
 
+
+### Getting started
+Clone repo, then
+
+    npm install
+    npm start
