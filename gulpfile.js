@@ -7,6 +7,8 @@ var fs         = require('fs');
 
 gulp.task('default', function() {
 
+  // From Babel's example setup.
+  // See https://babeljs.io/docs/setup/#browserify
   browserify({ debug: true })
     .transform(babelify)
     .require("./client.js", { entry: true })

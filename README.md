@@ -1,8 +1,9 @@
 rgb-core
 ========
-A simple example of React, Gulp, Babel and Browserify working together.
+A simple example of React, Gulp, Babel and Browserify working together in
+beautiful ES6 harmony.
 
-### What you'll find here
+## What you'll find here
 Contains examples of:
  - Creating React components as ES6 classes
    + No getInitialState needed
@@ -16,3 +17,4 @@ Contains examples of:
    + export default, extends, super
    + Fat arrow function
    + Spread operator ...
+

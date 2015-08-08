@@ -11,7 +11,11 @@ export default class List extends React.Component {
   render() {
     let listItems = [];
     if(this.props.items > 0) {
-      listItems = [...Array(this.props.items)].map((n, i) => <li key={i}>{ 'Item ' + i }</li>);
+      // Creating an array using the spread operator lets you map over it to build an array
+      // of elements from an integer (similar to Underscore/Lodash _.times function).
+      listItems = [...Array(this.props.items)].map((n, index) =>
+        <li key={index}>{ 'Item ' + index }</li>
+      );
     }
     return (
       <ul>
