@@ -1,0 +1,11 @@
+# OSX
+.DS_Store/
+
+# ide
+.idea/
+
+# node
+node_modules/
+
+# builds
+public/bundle.js
