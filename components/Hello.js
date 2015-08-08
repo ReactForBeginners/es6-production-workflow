@@ -1,23 +1,20 @@
+/**
+ *  Hello.js
+ *  Base react component for this example
+ *  @author: Ben Gundersen
+ */
 'use strict';
 
 import React from 'react';
 
-class List extends React.Component {
-  render() {
-    console.log(this.props.items);
-    var listItems = [...Array(this.props.items)].map((n, i) => <li key={i}>{ 'Item '+i }</li>);
-    return (
-      <ul>
-        { listItems }
-      </ul>
-    );
-  }
-}
+import List from './List.js';
+
 
 export default class Home extends React.Component {
 
   constructor() {
     super();
+    // Note that we set state directly in the constructor; no getInitialState method is needed
     this.state = {
       count: 0
     }
