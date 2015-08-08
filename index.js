@@ -1,12 +1,14 @@
 /**
+ * index.js
+ * ========
+ * ES6 bootstrapping. All subsequent required files (.js, .jsx, .es, .es6)
+ * will be transformed by Babel.
  *
- *
- *
+ * @author: Ben Gundersen
  */
 
-// Babel require hook. All subsequent required files (.js, .jsx, .es, .es6) will be
-// transformed by Babe after this.
+// Babel require hook.
 // See https://babeljs.io/docs/usage/require/
 require('babel/register');
-// Our server-side entry point.
+// Our Node entry point.
 require('./server.js');

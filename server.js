@@ -2,7 +2,7 @@
  *  server.js
  *  =========
  *  This is our Node entry point.
- *  Because of the require hook in index.js, we can use ES6 from here
+ *  Uses Express.js to serve our example.
  *
  *  @author: Ben Gundersen
  */

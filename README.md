@@ -20,7 +20,13 @@ Contains examples of:
 
 
 ### Getting started
+If you don't have Gulp installed:
+
+    sudo npm install gulp -g
+
 Clone repo, then
 
     npm install
     npm start
+    
+That's it!
