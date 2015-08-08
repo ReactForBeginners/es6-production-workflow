@@ -6,12 +6,12 @@ A simple example of React, Gulp, Babel and Browserify working together.
 Contains examples of:
  - Creating React components as ES6 classes
    + No getInitialState needed
-   + Binding callbacks
- - JSX transformation, free courtesy of Babel
+   + Must bind event callbacks (only React.createClass does this)
+ - JSX transform, free courtesy of Babel
  - Unidirectional data flow
- - Babel require hook, no build directory needed
- - Browserify bundling
- - Simple Express static server
+ - Browserify + Babelify = ES6 on the client
+ - Babel require hook = ES6 on the server
+ - Simple Express static server for this example
  - Playing with ES6
    + export default, extends, super
    + Fat arrow function
