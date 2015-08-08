@@ -1,6 +1,10 @@
 /**
- *  main.js
- *  This is our entry point. Because of the require hook in index.js, we can use ES6!
+ *  server.js
+ *  =========
+ *  This is our Node entry point.
+ *  Because of the require hook in index.js, we can use ES6!
+ *
+ *  @author: Ben Gundersen
  */
 
 import express from 'express';
