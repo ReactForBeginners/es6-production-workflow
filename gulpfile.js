@@ -19,7 +19,7 @@ var build = function() {
     .bundle()
     .on("error", function (err) { console.log("error: " + err.message); })
     .on('end', function() {
-      console.timeEnd(time_key);
+      console.timeEnd(timer_name);
     })
     .pipe(fs.createWriteStream("./public/bundle.js"))
 }

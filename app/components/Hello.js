@@ -27,7 +27,7 @@ module.exports = React.createClass({
   render: function() {
     return (
       <div>
-        <h1>Hello World 5</h1>
+        <h1>Hello React!</h1>
         <button onClick={ this.updateCount.bind(this, 1) }>+ More</button>
         <button onClick={ this.updateCount.bind(this, -1)}>- Less</button>
         <h2>{ this.state.count }</h2>
