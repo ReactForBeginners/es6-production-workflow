@@ -7,7 +7,8 @@
 
 var React = require('react');
 
-var List = require('./List.js');
+var List        = require('./List.js');
+var ColorButton = require('./ColorButton.js');
 
 
 module.exports = React.createClass({
@@ -28,8 +29,8 @@ module.exports = React.createClass({
     return (
       <div>
         <h1>Hello React!</h1>
-        <button onClick={ this.updateCount.bind(this, 1) }>+ More</button>
-        <button onClick={ this.updateCount.bind(this, -1)}>- Less</button>
+        <ColorButton handleClick={ this.updateCount.bind(this, 1) }>+ More</ColorButton>
+        <ColorButton handleClick={ this.updateCount.bind(this, -1)}>- Less</ColorButton>
         <h2>{ this.state.count }</h2>
         <List items={ this.state.count } />
       </div>
