@@ -7,6 +7,7 @@
  */
 'use strict';
 
+// For ES6/Babel, this is the exact same thing as: var React = require('react');
 import React from 'react';
 
 // Our first component!
