@@ -5,11 +5,12 @@
  */
 'use strict';
 
-import React from 'react';
+var React = require('react');
 
-export default class List extends React.Component {
-  render() {
-    let listItems = [];
+module.exports = React.createClass({
+
+  render: function() {
+    var listItems = [];
     if(this.props.items > 0) {
       // Creating an array using the spread operator lets you map over it to build an array
       // of elements from an integer (similar to Underscore/Lodash _.times function).
@@ -23,4 +24,5 @@ export default class List extends React.Component {
       </ul>
     );
   }
-}
+
+});

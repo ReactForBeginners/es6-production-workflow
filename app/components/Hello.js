@@ -5,31 +5,29 @@
  */
 'use strict';
 
-import React from 'react';
+var React = require('react');
 
-import List from './List.js';
+var List = require('./List.js');
 
 
-export default class Home extends React.Component {
+module.exports = React.createClass({
 
-  constructor() {
-    super();
-    // Note that we set state directly in the constructor; no getInitialState method is needed
-    this.state = {
+  getInitialState: function() {
+    return {
       count: 0
-    }
-  }
+    };
+  },
 
-  updateCount(num) {
+  updateCount: function(num) {
     this.setState({
       count: this.state.count + num
     });
-  }
+  },
 
-  render() {
+  render: function() {
     return (
       <div>
-        <h1>Hello World</h1>
+        <h1>Hello World 4</h1>
         <button onClick={ this.updateCount.bind(this, 1) }>+ More</button>
         <button onClick={ this.updateCount.bind(this, -1)}>- Less</button>
         <h2>{ this.state.count }</h2>
@@ -38,4 +36,4 @@ export default class Home extends React.Component {
     );
   }
 
-}
+});
