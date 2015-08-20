@@ -1,7 +1,5 @@
-rgb-core
-========
-A simple example of React, Gulp, Babel and Browserify working together in
-beautiful ES6 harmony.
+# Production workflow
+Sample project using React, Babel, and Gulp to illustrate how to prepare your web app for production, automate repetitive tasks, and take advantage of emerging Javascript standards while maintaining compatibility.
 
 ## What you'll find here
 Contains examples of:
